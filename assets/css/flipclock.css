@@ -18,8 +18,8 @@
   text-decoration: none;
   color: #ccc; }
 
-.flip-clock-wrapper a:hover {
-  color: #fff; }
+/*.flip-clock-wrapper a:hover {
+  color: #fff; }*/
 
 .flip-clock-wrapper ul {
   list-style: none; }
@@ -38,7 +38,9 @@
 /* Main */
 .flip-clock-wrapper {
   font: normal 25px "Helvetica Neue", Helvetica, sans-serif;
-  -webkit-user-select: none; }
+  -webkit-user-select: none;
+  
+  }
 
 .flip-clock-meridium {
   background: none !important;
@@ -432,6 +434,6 @@
     opacity: 0; } }
 
 #clock-for-countdown{
-    	text-align: left;
+    	text-align: center;
     	display: inline-block;
 }
