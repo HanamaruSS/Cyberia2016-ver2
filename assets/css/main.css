@@ -2852,7 +2852,7 @@
 				text-transform: none !important;
 			}
 
-				
+
 			#header nav a[href="register"]:hover {
 				background-color: rgba(255, 255, 255, 0.025);
 			}
@@ -2861,7 +2861,7 @@
 				background-color: rgba(255, 255, 255, 0.075);
 			}*/
 
-					
+
 
 		#header.alt {
 			background-color: transparent;
@@ -3084,13 +3084,13 @@
 
 	#banner {
 		padding: 10em 0 50% 0 ;
-		
+
 	}
 
 	/*	#banner .inner {
 			margin: 0 auto;
 			width: 55em;
-			
+
 		}
 
 		#banner .logo {
@@ -3610,7 +3610,7 @@
 		}
 
 /* Footer */
-	
+
 	#footer .inner {
 		padding: 0 ;
 		display: -moz-flex;
@@ -3823,10 +3823,25 @@
 	.tooltip:hover .tooltiptext {
 	    visibility: visible;
 	}
+.back-to-top-button{
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	bottom: 0;
+	right: 100px;
+	-webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
+  z-index: 100;
+	filter: brightness(130%);
+}
+.back-to-top-button:hover{
+	opacity: 0.7;
+	width: 100px;
+	height: 100px;
+}
 
-	
 /* extras */
-	
+
 	.camp-date {
 		font-size: 20pt;
 		font-weight: bold;
