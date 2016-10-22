@@ -3377,7 +3377,17 @@
 			margin: 0 auto;
 			width: 55em;
 		}
-
+    .wrapper .inner a:hover{
+			opacity: 0.7;
+		}
+		.wrapper .innter a{
+			opacity: 1;
+			-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+transition: all 0.5s ease;
+		}
 		.wrapper.style2 {
 			background-color: #353849;
 		}
@@ -3609,6 +3619,8 @@
 
 		}
 
+
+
 /* Footer */
 
 	#footer .inner {
@@ -3828,14 +3840,14 @@
 	height: 80px;
 	position: fixed;
 	bottom: 0;
-	right: 100px;
+	right: 70px;
 	-webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 1s;
   transition: width 1s, height 1s, background-color 1s, transform 1s;
   z-index: 100;
-	filter: brightness(130%);
 }
 .back-to-top-button:hover{
 	opacity: 0.7;
+
 	width: 100px;
 	height: 100px;
 }
