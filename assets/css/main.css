@@ -27,11 +27,6 @@
 		display: block;
 	}
 
-	#register{
-		margin-right: 10px;
-		position: relative;
-	}
-
 	body {
 		line-height: 1;
 	}
@@ -1720,7 +1715,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff !important;
+			color: #ffb200 !important;
 		}
 
 		a.special:not(.button) {
@@ -2836,7 +2831,8 @@
 					#header nav a[href="#menu"]:active {
 						background-color: rgba(255, 255, 255, 0.075);
 					}
-
+					
+					
 		/*#header nav a[href="register"] {
 			text-decoration: none;
 			-moz-transition: background-color 0.2s ease-in-out;
@@ -3628,7 +3624,7 @@ transition: all 0.5s ease;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		margin: 0 auto;
-		width: 75em;
+		width: 70em;
 		text-align: center;
 	}
 
@@ -3683,7 +3679,14 @@ transition: all 0.5s ease;
 			background-position: center, center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
+			
 		}
+		
+			#footer .inner {
+				padding: 3em 3em 1em 3em ;
+				display: block;
+				width: 100%;
+			}
 
 	}
 
@@ -3767,13 +3770,30 @@ transition: all 0.5s ease;
 	}
 
 	.poster img{
-		width: 322px;
-		height: 450px;
+		width: 20em;
+		height: 28em;
+		margin: 0 0.5em 1em 0.5em;
 	}
 
 	.gallery img{
-		width: 450px;
-		height: 300px;
+		width: 25em;
+		height: 17em;
+		margin: 0 0.5em 1em 0.5em;
+	}
+	
+	@media screen and (max-width: 360px) {
+
+		.poster img {
+			width: 80%;
+			height: auto;
+		}
+		
+		.gallery img {
+			width: 100%;
+			height: auto;
+			margin: 0 0 1em;
+		}
+
 	}
 
 	.gallery img, .poster, img{
@@ -3802,12 +3822,16 @@ transition: all 0.5s ease;
 	.tooltip {
     	position: relative;
    		display: inline-block;
-    	border-bottom: 1px dotted black;
+    	border-bottom: none;
+	}
+	
+	.tooltip a{
+		border-bottom: none;
 	}
 
 	.tooltip .tooltiptext {
     	visibility: hidden;
-    	width: 120px;
+    	width: 5em;
     	background-color: black;
     	color: #fff;
     	text-align: center;
@@ -3819,28 +3843,31 @@ transition: all 0.5s ease;
     	z-index: 1;
     	bottom: 100%;
     	left: 50%;
-    	margin-left: -60px;
+    	margin-left: -3em;
 	}
 
 	.tooltip:hover .tooltiptext {
 	    visibility: visible;
 	}
-.back-to-top-button{
-	width: 80px;
-	height: 80px;
-	position: fixed;
-	bottom: 0;
-	right: 70px;
-	filter: brightness(130%);
-	-webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 1s;
-  transition: width 1s, height 1s, background-color 1s, transform 1s;
-  z-index: 100;
-}
-.back-to-top-button:hover{
-	opacity: 0.7;
-	width: 100px;
-	height: 100px;
-}
+	
+	.back-to-top-button{
+		width: 4em;
+		height: 4em;
+		position: fixed;
+		bottom: 0.7em;
+		right: 1em;
+		opacity: 0.5;
+		-webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 1s;
+		transition: width 1s, height 1s, background-color 1s, transform 1s;
+		z-index: 100;
+	}
+	
+	.back-to-top-button:hover{
+		filter: brightness(130%);
+		opacity: 0.7;
+		width: 5em;
+		height: 5em;
+	}
 
 /* extras */
 
@@ -3862,3 +3889,20 @@ transition: all 0.5s ease;
 		font-size: 4em;
 		color: #ffb200;
 	}
+	
+	.copyright  li{
+		vertical-align: middle;
+	}
+	
+	.copyright img{
+		height: 3em;
+	}
+	
+	.copyright img:hover{
+		opacity: 0.7;
+	}
+
+	.sponsor a {
+		border-bottom: none;
+	}
+	
