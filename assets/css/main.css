@@ -3890,12 +3890,16 @@ transition: all 0.5s ease;
 		color: #ffb200;
 	}
 	
+/* footer */
+	
 	.copyright  li{
 		vertical-align: middle;
+		margin-bottom: 1em;
 	}
 	
 	.copyright img{
 		height: 3em;
+		filter: brightness(130%);
 	}
 	
 	.copyright img:hover{
