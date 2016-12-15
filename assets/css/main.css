@@ -3768,6 +3768,14 @@ transition: all 0.5s ease;
 	.gallery, .poster{
 		text-align: center;
 	}
+	
+	.gallery a, .poster a{
+		border-bottom: none;
+	}
+	
+	#lbPrevLink, #lbNextLink, #lbCloseLink {
+		border-bottom: none;
+	}
 
 	.poster img{
 		width: 20em;
@@ -3781,7 +3789,7 @@ transition: all 0.5s ease;
 		margin: 0 0.5em 1em 0.5em;
 	}
 	
-	@media screen and (max-width: 360px) {
+	@media screen and (max-width: 450px) {
 
 		.poster img {
 			width: 80%;
@@ -3871,6 +3879,8 @@ transition: all 0.5s ease;
 
 /* extras */
 
+		border-bottom: none !important;
+	}
 	.camp-date {
 		font-size: 20pt;
 		font-weight: bold;
@@ -3909,4 +3919,5 @@ transition: all 0.5s ease;
 	.sponsor a {
 		border-bottom: none;
 	}
+	
 	

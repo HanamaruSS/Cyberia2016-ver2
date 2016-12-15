@@ -21,7 +21,7 @@ function startTimer(duration, display) {
 
 window.onload = function () {
   var t1 = Date.now();
-  var t2 = new Date(2016, 11, 5, 8, 30);
+  var t2 = new Date(2017, 11, 11, 8, 30);
   var dif = t2.getTime() - t1;
   dif = dif > 0 ? dif : 0;
 
